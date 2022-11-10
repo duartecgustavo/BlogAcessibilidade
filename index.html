@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./css/global.css" />
 
     <!-- Icone da aba no navegador -->
-    <link rel="icon" type="image/x-icon" href="./imagens/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -16,30 +16,343 @@
     />
     <title>+mobilidade</title>
   </head>
-  <body>
+  <body  class="changeLangPoppins" id="testeId">
+    <!-- Acessibilidade libras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <!-- Acessibilidade libras -->
+
+    <!-- Trocar de lingua -->
+    <button class="buttonChangeLang" onClick="changeLanguage()">
+      <img
+        src="./assets/trocar_lingua.png"
+        alt="botão para trocar a font da pagina"
+      />
+    </button>
+    <!-- Trocar de lingua -->
+
     <header>
-      <a href=""><img src="" alt="pesquisar" /></a>
-      <a href=""><img src="" alt="perfil" /></a>
-      <a href=""><img src="" alt="dúvidas" /></a>
+      <a href=""><img src="./assets/lupa.svg" alt="dúvidas" /></a>
+      <a href=""><img src="./assets/emogi.svg" alt="perfil" /></a>
+      <a href=""><img src="./assets/interrogacao.svg" alt="pesquisar" /></a>
     </header>
 
-    <main>
+    <main class="container">
       <!-- Capa -->
-      <section></section>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/image 1.jpg"
+              class="d-block w-100"
+              alt="imagem de uma estação de metro com pessoas circulando e o metrô em movimento."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/image 2.jpg"
+              class="d-block w-100"
+              alt="imagem de uma mulher em uma mota e de um céu completamente azul."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/image 3.jpg"
+              class="d-block w-100"
+              alt="imagem de um onibus em movimento em uma rua de uma cidade"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Capa -->
+
       <!-- Para Você -->
-      <section></section>
+      <section class="row">
+        <p class="title">Para você</p>
+        <div class="content_section col-12 col-md-4 col-lg-3">
+          <img
+            src="./assets/imagens_diversas/section_para_voce/foto1.png"
+            alt="imagem de rua com onibus e motos paradas em um farol"
+          />
+          <p>Acessibilidade no transporte público</p>
+          <div class="pessoa">
+            <img
+              src="./assets/icones_pessoas/Pessoa1.png"
+              alt="foto do rosto de uma pessoa"
+            />
+            <p>Clarissa Sampaio</p>
+          </div>
+        </div>
+        <div class="content_section col-12 col-md-4 col-lg-3">
+          <img
+            src="./assets/imagens_diversas/section_para_voce/foto2.png"
+            alt="imagem da tela de um computador"
+          />
+          <p>Acessibilidade no transporte público</p>
+          <div class="pessoa">
+            <img
+              src="./assets/icones_pessoas/Pessoa2.png"
+              alt="imagem de uma plca de acessibilidade"
+            />
+            <p>Barbara Francez</p>
+          </div>
+        </div>
+        <div class="content_section col-12 col-md-4 col-lg-3">
+          <img
+            src="./assets/imagens_diversas/section_para_voce/foto3.png"
+            alt="imagem pessoas bebendo em uma mesa"
+          />
+          <p>Acessibilidade no transporte público</p>
+          <div class="pessoa">
+            <img
+              src="./assets/icones_pessoas/Pessoa3.png"
+              alt="foto do rosto de uma pessoa"
+            />
+            <p>Paulo Amorim</p>
+          </div>
+        </div>
+        <div class="content_section col-12 col-md-4 col-lg-3">
+          <img
+            src="./assets/imagens_diversas/section_para_voce/foto4.png"
+            alt="imagem de um tablet"
+          />
+          <p>Acessibilidade no transporte público</p>
+          <div class="pessoa">
+            <img
+              src="./assets/icones_pessoas/Pessoa4.png"
+              alt="foto do rosto de uma pessoa"
+            />
+            <p>Camila M.</p>
+          </div>
+        </div>
+      </section>
       <!-- Destaque -->
-      <section></section>
+      <section class="row">
+        <p class="title">Destaques</p>
+        <div class="content_section col-12 col-md-4 col-lg-3">
+          <img
+            src="./assets/imagens_diversas/section_destaques/foto1.png"
+            alt="imagem de um tablet"
+          />
+          <p>Você está pensando em acessibilidade?</p>
+          <div class="pessoa">
+            <img
+              src="./assets/icones_pessoas/Pessoa4.png"
+              alt="foto do rosto de uma pessoa"
+            />
+            <p>Camila M.</p>
+          </div>
+        </div>
+        <div class="content_section col-12 col-md-4 col-lg-3">
+          <img
+            src="./assets/imagens_diversas/section_destaques/foto2.png"
+            alt="imagem de uma reunião com diversas pessoas e postites em uma lousa"
+          />
+          <p>Exercício da Cidadania</p>
+          <div class="pessoa">
+            <img
+              src="./assets/icones_pessoas/Pessoa3.png"
+              alt="foto do rosto de uma pessoa"
+            />
+            <p>Paulo Amorim</p>
+          </div>
+        </div>
+        <div class="content_section col-12 col-md-4 col-lg-3">
+          <img
+            src="./assets/imagens_diversas/section_destaques/foto3.png"
+            alt="imagem de rua com vaga para PCD"
+          />
+          <p>Soluções para mobilidade urbana</p>
+          <div class="pessoa">
+            <img
+              src="./assets/icones_pessoas/Pessoa2.png"
+              alt="foto do rosto de uma pessoa"
+            />
+            <p>Barbara Francez</p>
+          </div>
+        </div>
+        <div class="content_section col-12 col-md-4 col-lg-3">
+          <img
+            src="./assets/imagens_diversas/section_destaques/foto4.png"
+            alt="imagem de rua com vaga para PCD"
+          />
+          <p>Política Nacional de Mobilidade</p>
+          <div class="pessoa">
+            <img
+              src="./assets/icones_pessoas/Pessoa1.png"
+              alt="foto do rosto de uma pessoa"
+            />
+            <p>Clarissa Sampaio</p>
+          </div>
+        </div>
+      </section>
       <!-- Pessoas -->
-      <section></section>
+      <section class="row">
+        <p class="title">Pessoas</p>
+        <div class="card-group">
+          <div class="card text-center">
+            <img src="./assets/luiza.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Luiza Silveira</h5>
+              <a href="#" class="btn btn-primary">Seguir</a>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./assets/carlos.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Carlos K.</h5>
+              <a href="#" class="btn btn-primary">Seguir</a>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./assets/luana.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Luana Silva</h5>
+              <a href="#" class="btn btn-primary">Seguir</a>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./assets/pedro.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Pedro Castro</h5>
+              <a href="#" class="btn btn-primary">Seguir</a>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./assets/marina.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Marina Oliveira</h5>
+              <a href="#" class="btn btn-primary">Seguir</a>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./assets/anderson.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Anderson Y.</h5>
+              <a href="#" class="btn btn-primary">Seguir</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pessoas -->
       <!-- Novidades -->
-      <section></section>
+      <section class="row">
+        <p class="title">Novidades</p>
+        <div class="content_section col-12 col-md-4 col-lg-3">
+          <img
+            src="./assets/imagens_diversas/section_novidades/foto1.png"
+            alt="imagem de um boneco de madeira empurrando blocos também de madeira"
+          />
+          <p>Problemas de acessibilidade na mobilidade urbana</p>
+          <div class="pessoa">
+            <img
+              src="./assets/icones_pessoas/Pessoa3.png"
+              alt="foto do rosto de uma pessoa"
+            />
+            <p>Paulo Amorim</p>
+          </div>
+        </div>
+        <div class="content_section col-12 col-md-4 col-lg-3">
+          <img
+            src="./assets/imagens_diversas/section_novidades/foto2.png"
+            alt="imagem de escadas"
+          />
+          <p>Como você pode ajudar pessoas com deficiencia no transito?</p>
+          <div class="pessoa">
+            <img
+              src="./assets/icones_pessoas/Pessoa4.png"
+              alt="foto do rosto de uma pessoa"
+            />
+            <p>Camila M.</p>
+          </div>
+        </div>
+        <div class="content_section col-12 col-md-4 col-lg-3">
+          <img
+            src="./assets/imagens_diversas/section_novidades/foto3.png"
+            alt="imagem de rua com transito de carros "
+          />
+          <p>Espaços públicos</p>
+          <div class="pessoa">
+            <img
+              src="./assets/icones_pessoas/Pessoa1.png"
+              alt="foto do rosto de uma pessoa"
+            />
+            <p>Clarissa Sampaio</p>
+          </div>
+        </div>
+        <div class="content_section col-12 col-md-4 col-lg-3">
+          <img
+            src="./assets/imagens_diversas/section_novidades/foto4.png"
+            alt="imagem de PCD caminhando"
+          />
+          <p>Adaptações</p>
+          <div class="pessoa">
+            <img
+              src="./assets/icones_pessoas/Pessoa2.png"
+              alt="foto do rosto de uma pessoa"
+            />
+            <p>Barbara Francez</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <p>Politicas de privacidade - Termos de uso - Contato</p>
+      <p>
+        © Todos os direitos reservados - BlogAcessibilidade - Politicas de
+        privacidade
+      </p>
     </footer>
   </body>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <!-- Importação JavaScript -->
   <script src="./javascript/index.js"></script>
 
@@ -49,5 +362,4 @@
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"
   ></script>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </html>

@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Delicious;
+  src: url("../OpenDyslexic/OpenDyslexic-Regular.otf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px !important;
+  box-sizing: border-box;
+}
+
+/* INICIO LIBRAS */
+.enabled {
+  margin-right: 5px;
+  margin-top: -20vh !important;
+}
+.access-button {
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+  border-radius: 50px !important;
+  border: 0px;
+}
+/* FIM LIBRAS */
+
+/* Trocar de lingua */
+
+.changeLangOpenDyslexic {
+  font-family: "Delicious", "Poppins", sans-serif !important;
+}
+.changeLangPoppins {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.buttonChangeLang {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  border-radius: 50%;
+  border-style: none !important;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+  background-color: #000;
+  right: 0;
+  top: 48%;
+  margin-right: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.buttonChangeLang > img {
+  width: 80%;
+}
+
+/* Trocar de lingua */
+
+body {
+  background-color: #f6faff !important;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+header > a > img {
+  height: 40px;
+}
+
+.carousel {
+  margin: 50px 0px 50px 0px !important;
+}
+
+.row {
+  margin: 50px 0px 50px 0px !important;
+}
+
+.content_section > p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px 0px 15px 0px !important;
+}
+
+.content_section > img {
+  width: 250px;
+}
+
+.title {
+  font-weight: 500;
+  margin-bottom: 20px !important;
+}
+
+.pessoa {
+  display: flex;
+  gap: 10px;
+}
+.pessoa > p {
+  font-weight: 300;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > p {
+  font-weight: 500;
+}
